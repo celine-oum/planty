@@ -1,0 +1,216 @@
+/*
+ Theme Name:   blankslate-enfant
+ Theme URI:    http://example.com/blankslate-enfant/
+ Description:  blankslate-enfant Theme
+ Author:       celine
+ Author URI:   http://example.com
+ Template:     blankslate
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  blankslate-enfant
+*/
+
+header {
+  height: 80px;
+background-color: #ffff;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-left: 30px;
+}
+
+#menu-principal{
+  display: flex;
+  list-style: none;
+  position: relative;
+    color: var(--ast-global-color-3);
+    align-items: center;
+    
+      
+}
+
+#menu-principal a{
+  color: black;
+  width: 120px;
+height: 19px;
+
+}
+
+a{
+  text-decoration: none;
+  font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+#menu{
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  grid-column-gap: 20px;
+  overflow-wrap: anywhere;
+  width: 469px;
+  height: 80px;
+  display: flex;
+  height: 100%;
+  min-height: 0;
+  align-items: center;
+  
+}
+
+.admin-link {
+  padding-top: 5px;
+  text-align: center;
+  width: 100px;
+}
+
+body {
+  margin: 0;
+}
+
+.bouton-commande{
+  color: #ffffff !important;
+  background-color: #e0b9b4 !important;
+  width: 236px;
+line-height: 80px
+}
+
+.textcenter {
+  text-align: center;
+
+  }
+
+.footer{
+ display: flex;
+}
+
+  .widget-image-caption.wp-caption-text{
+  font-weight:bold;
+ }
+
+
+.menu-footer-container, .menu-item-143, .menu-item, .menu-item-type-post_type, .menu-item-object-page, .menu-item-143, ul, a {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+ 
+.menu-footer-container{
+  height: 60px;
+}
+.sub{
+  display: flex;
+  justify-content: center;
+  margin-left: 80px;
+
+   }
+
+
+hr{
+  margin: 0px 165px 0px 165px ;
+  
+}
+
+.formulaireG{
+  padding-top: 30px;
+   
+}
+
+
+
+.separateur{
+border-left: 1px solid white;
+margin: 5px !important;
+}
+
+
+
+h1{
+height: 46px;
+text-align: center;
+font-family: "Syne";
+color: white;
+}
+
+h2,label{
+  font-family: "Syne";
+color: white;
+}
+
+.formulaireD{
+    padding-top: 30px;
+
+}
+
+#wpcf7-f497-p53-o1 img{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 192px;
+  height: 128px;
+  }
+
+.form-flex{
+  display: flex;
+  flex-wrap: row;
+  justify-content: space-between;
+}
+
+.form-column{
+  min-width: 100px;
+  padding: 1%;
+}
+
+
+
+.form-input-container{
+  display: flex;
+}
+
+.form-input-container input{
+  width: 51px;
+  height: 56px;
+  text-align: center;
+}
+
+.form-input-container .form-input-buttons button{
+  display: block;
+  height: 28px;
+  width: 28px;
+  background-color: #e0b9b4;
+  text-align: center;
+  padding: 0;
+  margin-left: 0px;
+}
+
+.form-input-container button{
+  display: block;
+  height: 56px;
+  width: 95px;
+  background-color: #e0b9b4;
+  text-align: center;
+  padding: 0; 
+  border-radius: 5px;
+  margin-left: 5px;
+  font-family: "Syne";
+color: white;
+}
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+  
+
+    
