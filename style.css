@@ -155,7 +155,6 @@ color: black;
 
 .form-flex{
   display: flex;
-  flex-wrap: row;
   justify-content: space-between;
 }
 
