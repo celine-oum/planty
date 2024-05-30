@@ -10,11 +10,11 @@
 <body <?php 'body_class'(); ?>>
   <?php 'wp_body_open'(); ?>
   <div id="wrapper" class="hfeed">
-    <header id="header" role="banner">
+    <header id="header" role="banner"></div>
       <div id="branding">
         <div id="site-title" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
           <a href="<?php echo 'home_url'(); ?>">
-
+          </div>
             <?php $custom_logo_id = 'get_theme_mod'('custom_logo');
             $logo = 'wp_get_attachment_image_src'($custom_logo_id, 'full');
             if ('has_custom_logo'()) {
@@ -28,11 +28,12 @@
                                     } ?>><?php 'bloginfo'('description'); ?></div>
       </div>
       <nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
-        <?php wp_nav_menu(array('theme_location' => 'main-menu', 'link_before' => '<span itemprop="name">', 'link_after' => '</span>')); ?>
-    <a class="bouton-commande" href="/commander">commander</a>
+        <?php 'wp_nav_menu'(array('theme_location' => 'main-menu', 'link_before' => '<span itemprop="name">', 'link_after' => '</span>')); ?>
+        <a class="bouton-commande" href="/commander">commander</a>
 
 
       </nav>
     </header>
     <div id="container">
       <main id="content" role="main">
+      </div>

@@ -10,10 +10,10 @@ function planty_add_admin_link_to_nav_menu($items, $args) {
     //NavAdMIN 
     // Je vérifie si l'utilisateur est connecté
 
-    if (is_user_logged_in()) {
+    if ('is_user_logged_in'()) {
 
         // Je vérifie si l'utilisateur a un rôle d'administrateur
-        $user = wp_get_current_user();
+        $user = 'wp_get_current_user'();
         if (in_array('administrator', $user->roles)) {
             // J' ajoute le lien "admin" au menu
             $admin_link = '<li class="admin-link"><a class="Admin-button" href="/wp-admin/">Admin</a></li>';
@@ -32,18 +32,18 @@ function planty_add_admin_link_to_nav_menu($items, $args) {
     return $items;
 }
 
-add_filter('wp_nav_menu_items', 'planty_add_admin_link_to_nav_menu', 10, 2);
+'add_filter'('wp_nav_menu_items', 'planty_add_admin_link_to_nav_menu', 10, 2);
 
 function planty_register_menu() {
 
-    register_nav_menu(
+    'register_nav_menu'(
         
       'planty-menu',
       'footer-menu'
     );
 
   }
-  add_action( 'after_setup_theme', 'planty_register_menu' );
+  'add_action'( 'after_setup_theme', 'planty_register_menu' );
 
 
 ?>
