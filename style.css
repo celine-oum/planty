@@ -12,6 +12,7 @@
  Text Domain:  blankslate-enfant
 */
 
+
 header {
   height: 80px;
 background-color: #ffff;
@@ -19,6 +20,7 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 padding-left: 30px;
+flex-wrap: wrap;
 }
 
 #menu-principal{
@@ -47,7 +49,7 @@ a{
 
 #menu{
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns:  auto;
   align-items: center;
   grid-column-gap: 20px;
   overflow-wrap: anywhere;
@@ -68,7 +70,9 @@ a{
 
 body {
   margin: 0;
+  
 }
+
 
 .bouton-commande{
   color: #ffffff !important;
@@ -116,7 +120,6 @@ hr{
 
 .formulaireG{
   padding-top: 30px;
-   
 }
 
 
@@ -137,7 +140,10 @@ color: white;
 
 h2,label{
   font-family: "Syne";
-color: black;
+}
+
+h2{
+  color: white;
 }
 
 .formulaireD{
@@ -198,8 +204,21 @@ color: black;
 color: white;
 }
 
-
-
+@media only screen and (max-width: 768px) {
+  .container {
+  margin: auto;
+  width: 90%;
+  }
+  #menu{
+    flex-direction: column;
+  }
+  #header{
+    height: auto;
+  }
+  .form-flex{
+    flex-wrap: wrap;
+  }
+}
 
 
 

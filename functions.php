@@ -16,7 +16,7 @@ function planty_add_admin_link_to_nav_menu($items, $args) {
         $user = 'wp_get_current_user'();
         if (in_array('administrator', $user->roles)) {
             // J' ajoute le lien "admin" au menu
-            $admin_link = '<li class="admin-link"><a class="Admin-button" href="/wp-admin/">Admin</a></li>';
+            $admin_link = '<li class="admin-link"><a class="Admin-button" href="/wp-admin/">Admin</a>';
 
 						// mettre au milieu de la nav
             $items_array = explode('</li>', $items);
